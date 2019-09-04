@@ -63,6 +63,14 @@
     <Compile Include="SyntaxBox.cs" />
     <Compile Include="XmlHighlighter.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\syntax.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\csharp.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildBinPath)\Microsoft.WinFX.targets" />
 </Project>

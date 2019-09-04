@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Syntax name="csharp">
+  <HighlightWordsRule name="Reserved language words">
+    <Words>
+      abstract	as	base	bool
+      break	byte	case	catch
+      char	checked	class	const
+      continue	decimal	default	delegate
+      do	double	else	enum
+      event	explicit	extern	false
+      finally	fixed	float	for
+      foreach	goto	if	implicit
+      in	int	interface	internal
+      is	lock	long	namespace
+      new	null	object	operator
+      out	override	params	private
+      protected	public	readonly	ref
+      return	sbyte	sealed	short
+      sizeof	stackalloc	static	string
+      struct	switch	this	throw
+      true	try	typeof	uint
+      ulong	unchecked	unsafe	ushort
+      using	using static	virtual	void
+      volatile	while
+    </Words>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#0080FF</Foreground>
+    <FontWeight>Bold</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightWordsRule name="Standard packages">
+    <Words>
+      std ieee work standard textio std_logic_1164 std_logic_arith
+      std_logic_misc std_logic_signed std_logic_textio
+      std_logic_unsigned numeric_bit numeric_std math_complex
+      math_real vital_primitives vital_timing
+    </Words>
+    <IgnoreCase>true</IgnoreCase>
+    <Foreground>#C00080</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightWordsRule name="Standard types">
+    <Words>
+    </Words>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#8000FF</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightWordsRule name="Standard functions">
+    <Words>
+      now readline read writeline write endfile resolved to_bit
+      to_bitvector to_stdulogic to_stdlogicvector to_stdulogicvector
+      to_x01 to_x01z to_UX01 rising_edge falling_edge is_x shift_left
+      shift_right rotate_left rotate_right resize to_integer to_unsigned
+      to_signed std_match to_01
+    </Words>
+    <IgnoreCase>true</IgnoreCase>
+    <Foreground>#0080FF</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightLineRule name="Comments">
+    <LineStart>//</LineStart>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#009933</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightLineRule>
+
+  <AdvancedHighlightRule name="Numbers">
+    <Expression>\b([0-9]+)\b</Expression>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#F68A1B</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </AdvancedHighlightRule>
+</Syntax>
