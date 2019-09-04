@@ -2,7 +2,7 @@
 
 namespace SharpSyntax
 {
-    public class HighlightLineRule
+    public class HighlightLineRule : Rule
     {
         public HighlightLineRule(XElement rule)
         {
@@ -11,7 +11,5 @@ namespace SharpSyntax
         }
 
         public string LineStart { get; }
-
-        public RuleOptions Options { get; }
     }
 }

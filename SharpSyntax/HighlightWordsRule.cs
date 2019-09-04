@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace SharpSyntax
 {
-    public class HighlightWordsRule
+    public class HighlightWordsRule : Rule
     {
         public HighlightWordsRule(XElement rule)
         {
@@ -19,8 +19,6 @@ namespace SharpSyntax
                 if (!string.IsNullOrWhiteSpace(word))
                     Words.Add(word.Trim());
         }
-
-        public RuleOptions Options { get; }
 
         public List<string> Words { get; }
     }

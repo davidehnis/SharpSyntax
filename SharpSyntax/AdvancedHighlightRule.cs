@@ -2,7 +2,7 @@
 
 namespace SharpSyntax
 {
-    public class AdvancedHighlightRule
+    public class AdvancedHighlightRule : Rule
     {
         public AdvancedHighlightRule(XElement rule)
         {
@@ -11,7 +11,5 @@ namespace SharpSyntax
         }
 
         public string Expression { get; }
-
-        public RuleOptions Options { get; }
     }
 }
